@@ -26,14 +26,14 @@ app.listen(3000);
 In the case you are running multiple domains on this server, you can add FQDN instead of only sub. Also you may user [Koa-router](https://github.com/alexmingoia/koa-router) routes same as generator functions as target of a domain.
 
 ```
-app.use(subdomain('sub.example.com', exampleRoute); // not exampleRoute.routes() !!!
-app.use(subdomain('sub.foobar.com', function*(next){...});
+app.use(subdomain('sub.example.com', exampleRoute)); // not exampleRoute.routes() !!!
+app.use(subdomain('sub.foobar.com', function*(next){...}));
 ```
 
 Also wildcards for the last sub domain are handled same as deeper domains below the * 
 
 ```
-app.use(subdomain('*.example.com',wildcardRoute);
+app.use(subdomain('*.example.com',wildcardRoute));
 
 ```
 So `intranet.management.example.com` is matched by `*.example.com`
