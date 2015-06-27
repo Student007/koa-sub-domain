@@ -1,3 +1,4 @@
+script: ./test/pre-script.sh
 language: node_js
 node_js:
   - "0.12.4"
@@ -13,5 +14,5 @@ addons:
     - v2.api.example.com
     - c.b.a.v1.api.example.com
     - c.b.a.v2.api.example.com
-
+script: ./test/post-script.sh
 
