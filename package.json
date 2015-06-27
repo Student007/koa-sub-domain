@@ -1,0 +1,41 @@
+{
+  "name": "koa-sub-domain",
+  "version": "1.0.0",
+  "description": "Simple and lightweight Koa middleware to handle multilevel and wildcard subdomains",
+  "main": "lib/koa-sub-domain.js",
+  "scripts": {
+    "test": "./test/pre-script.sh; gulp test-once; ./test/post-script.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Student007/koa-sub-domain.git"
+  },
+  "keywords": [
+    "koa",
+    "router",
+    "subdomain",
+    "middleware"
+  ],
+  "author": "Daniel Bunzendahl",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Student007/koa-sub-domain/issues"
+  },
+  "devDependencies": {
+    "chai": "^3.0.0",
+    "co-supertest": "0.0.10",
+    "eslint": "^0.23.0",
+    "gulp": "^3.9.0",
+    "gulp-exit": "0.0.2",
+    "gulp-mocha-co": "^0.4.1-co.3",
+    "gulp-nodemon": "^2.0.3",
+    "koa-router": "^5.1.2",
+    "supertest": "^1.0.1"
+  },
+  "engines": {
+    "node": ">= 0.11.16",
+    "iojs": ">= 1.0.0"
+  },
+  "homepage": "https://github.com/Student007/koa-sub-domain#readme",
+  "dependencies": {}
+}
