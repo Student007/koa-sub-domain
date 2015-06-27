@@ -4,7 +4,8 @@
   "description": "Simple and lightweight Koa middleware to handle multilevel and wildcard subdomains",
   "main": "lib/koa-sub-domain.js",
   "scripts": {
-    "test": "./test/pre-script.sh; gulp test-once; ./test/post-script.sh"
+    "local": "./test/pre-script.sh; gulp test-once; ./test/post-script.sh",
+    "test": "gulp test-once;"
   },
   "repository": {
     "type": "git",
