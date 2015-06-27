@@ -29,6 +29,7 @@
     "gulp-exit": "0.0.2",
     "gulp-mocha-co": "^0.4.1-co.3",
     "gulp-nodemon": "^2.0.3",
+    "koa": "^0.21.0",
     "koa-router": "^5.1.2",
     "supertest": "^1.0.1"
   },
