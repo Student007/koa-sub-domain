@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/Student007/koa-sub-domain.svg)](https://travis-ci.org/Student007/koa-sub-domain)
 # koa-sub-domain
 Simple and lightweight Koa middleware to handle multilevel and wildcard subdomains
 
