@@ -5,3 +5,13 @@ node_js:
   - "iojs-v1.0.4" 
   - "iojs-v2.0.2"
   - "iojs-v2.3"
+addons:
+  hosts:
+    - example.com
+    - api.example.com
+    - v1.api.example.com
+    - v2.api.example.com
+    - c.b.a.v1.api.example.com
+    - c.b.a.v2.api.example.com
+
+
