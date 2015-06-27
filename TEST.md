@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/Student007/koa-sub-domain.svg)](https://travis-ci.org/Student007/koa-sub-domain)
 ##Running The Tests
 
     npm test
