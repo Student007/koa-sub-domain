@@ -60,7 +60,7 @@ describe('Simple tests', function () {
   ///////////////////////////////
 
   it('GET ' + config.urls.BASE_URL, function (done) {
-    http.get('http://'+ config.urls.BASE_URL+':3000', function (res) {
+    http.get('http://'+ config.urls.BASE_URL+':'+config.PORT+'', function (res) {
       res.on('data', function(data){
         expect(data.toString()).to.equal(responses.main['/']);
         done();
@@ -73,7 +73,7 @@ describe('Simple tests', function () {
   ///////////////////////////////
 
   it('GET ' + config.urls.API_URL, function (done) {
-    http.get('http://' + config.urls.API_URL+':3000', function (res) {
+    http.get('http://' + config.urls.API_URL+':'+config.PORT+'', function (res) {
        res.on('data', function(data){
           expect(data.toString()).to.equal(responses.api['/']);
           done();
@@ -82,7 +82,7 @@ describe('Simple tests', function () {
   });
 
   it('GET ' + config.urls.API_URL + '/users', function (done) {
-    http.get('http://' + config.urls.API_URL + ':3000/users', function (res) {
+    http.get('http://' + config.urls.API_URL + ':'+config.PORT+'/users', function (res) {
       res.on('data', function(data){
         expect(data.toString()).to.equal( JSON.stringify(responses.api['/users']) );
         done();

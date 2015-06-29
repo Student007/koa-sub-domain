@@ -97,7 +97,7 @@ describe('Divide and Conquer tests', function () {
   ///////////////////////////////
   it('GET ' + config.urls.BASE_URL, function (done) {
 
-    http.get('http://'+ config.urls.BASE_URL+':3000', function (res) {
+    http.get('http://'+ config.urls.BASE_URL+':'+config.PORT+'', function (res) {
      res.on('data', function(data){
         expect(data.toString()).to.equal(responses.main['/']);
         done();
@@ -111,7 +111,7 @@ describe('Divide and Conquer tests', function () {
 
 
   it('GET ' + config.urls.API_URL, function (done) {
-    http.get('http://' + config.urls.API_URL+':3000', function (res) {
+    http.get('http://' + config.urls.API_URL+':'+config.PORT+'', function (res) {
       res.on('data', function(data){
         expect(data.toString()).to.equal(responses.api.main['/']);
         done();
@@ -124,7 +124,7 @@ describe('Divide and Conquer tests', function () {
   ///////////////////////////////
 
   it('GET ' + config.urls.V1_API_URL, function (done) {
-    http.get('http://' + config.urls.V1_API_URL+':3000', function (res) {
+    http.get('http://' + config.urls.V1_API_URL+':'+config.PORT+'', function (res) {
       res.on('data', function(data){
         expect(data.toString()).to.equal(responses.api.v1['/']);
         done();
@@ -133,7 +133,7 @@ describe('Divide and Conquer tests', function () {
   });
 
   it('GET ' + config.urls.V1_API_URL + '/users', function (done) {
-    http.get('http://' + config.urls.V1_API_URL+':3000' + '/users', function (res) {
+    http.get('http://' + config.urls.V1_API_URL+':'+config.PORT+'' + '/users', function (res) {
       res.on('data', function(data){
         expect(data.toString()).to.equal( JSON.stringify(responses.api.v1['/users']) );
         done();
@@ -143,7 +143,7 @@ describe('Divide and Conquer tests', function () {
 
   //curve ball..
   it('GET c.b.a.' + config.urls.V1_API_URL, function (done) {
-    http.get('http://c.b.a.' + config.urls.V1_API_URL+':3000', function (res) {
+    http.get('http://c.b.a.' + config.urls.V1_API_URL+':'+config.PORT+'', function (res) {
       res.on('data', function(data){
         expect(data.toString()).to.equal(responses.api.v1['/']);
         done();
@@ -157,7 +157,7 @@ describe('Divide and Conquer tests', function () {
 
 
   it('GET ' + config.urls.V2_API_URL, function (done) {
-    http.get('http://' + config.urls.V2_API_URL+':3000', function (res) {
+    http.get('http://' + config.urls.V2_API_URL+':'+config.PORT+'', function (res) {
       res.on('data', function(data){
         expect(data.toString()).to.equal(responses.api.v2['/']);
         done();
@@ -166,7 +166,7 @@ describe('Divide and Conquer tests', function () {
   });
 
   it('GET ' + config.urls.V2_API_URL + '/users', function (done) {
-    http.get('http://' + config.urls.V2_API_URL+':3000' + '/users', function (res) {
+    http.get('http://' + config.urls.V2_API_URL+':'+config.PORT+'' + '/users', function (res) {
       res.on('data', function(data){
         expect(data.toString()).to.equal(JSON.stringify(responses.api.v2['/users']) );
         done();
@@ -176,7 +176,7 @@ describe('Divide and Conquer tests', function () {
 
   //curve ball..
   it('GET c.b.a.' + config.urls.V2_API_URL, function (done) {
-    http.get('http://c.b.a.' + config.urls.V2_API_URL+':3000', function (res) {
+    http.get('http://c.b.a.' + config.urls.V2_API_URL+':'+config.PORT+'', function (res) {
       res.on('data', function(data){
         expect(data.toString()).to.equal(responses.api.v2['/']);
         done();

@@ -21,7 +21,7 @@ gulp.task('mocha', function() {
   process.env.PORT = 8001; // default would conflict with superset
   return gulp.src(['test/*.js']) // run all tests
   .pipe(mocha({           // pipe them into mocha
-    reporter: 'nyan'      // report by nyan
+    reporter: 'list'      // report by nyan
   }));
 });
 

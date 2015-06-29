@@ -61,7 +61,7 @@ describe('Multi-level tests', function () {
 
   it('http://'+ config.urls.BASE_URL, function (done) {
   
-      http.get('http://'+ config.urls.BASE_URL+':3000', function(res){
+      http.get('http://'+ config.urls.BASE_URL+':'+config.PORT+'', function(res){
         res.on('data', function(data){
           expect(data.toString()).to.equal(responses.main['/']);
           done();
@@ -76,7 +76,7 @@ describe('Multi-level tests', function () {
   // main route
   it('GET ' + config.urls.V1_API_URL, function (done) {
     
-      http.get('http://' + config.urls.V1_API_URL+':3000', function(res){
+      http.get('http://' + config.urls.V1_API_URL+':'+config.PORT+'', function(res){
         res.on('data', function(data){
           expect(data.toString()).to.equal(responses.api['/']);
           done();
@@ -85,7 +85,7 @@ describe('Multi-level tests', function () {
   });
   // different resource users
   it('GET ' + config.urls.V1_API_URL + '/users', function (done) {
-      http.get('http://' + config.urls.V1_API_URL+':3000/users', function(res){
+      http.get('http://' + config.urls.V1_API_URL+':'+config.PORT+'/users', function(res){
         res.on('data', function(data){
           expect(data.toString()).to.equal(responses.api['/users']);
           done();
