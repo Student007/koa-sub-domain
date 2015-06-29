@@ -1,3 +1,4 @@
+[![Stories in Ready](https://badge.waffle.io/Student007/koa-sub-domain.png?label=ready&title=Ready)](https://waffle.io/Student007/koa-sub-domain)
 
 <a href='https://pledgie.com/campaigns/29613'><img align='right' alt='Click here to lend your support to: Koa-sub-domain middleware and make a donation at pledgie.com !' src='https://pledgie.com/campaigns/29613.png?skin_name=chrome' border='0' ></a>
 
