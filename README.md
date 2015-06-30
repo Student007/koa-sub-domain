@@ -81,6 +81,6 @@ That means FQDNs should be resolved the fastest.
 ### License
 MIT<a href='https://pledgie.com/campaigns/29613'><img align='right' alt='Click here to lend your support to: Koa-sub-domain middleware and make a donation at pledgie.com !' src='https://pledgie.com/campaigns/29613.png?skin_name=chrome' border='0' ></a>
 
-**Note:** If you are working for a big company please notice my works as I would be an external 
+**Note:** If you are working for a big company please notice my works as I would be an external - small companies please donate by project success. Open Source contributors: I do not expext something - I love to give you something back !!
 ###Notes
 **TODO**: checking out whether yield has to be replaced by return because of there is no more following match !
