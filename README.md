@@ -2,7 +2,7 @@
 <a href="https://flattr.com/submit/auto?user_id=Student007&url=https%3A%2F%2Fgithub.com%2FStudent007%2Fkoa-sub-domain" target="_blank"><img src="http://button.flattr.com/flattr-badge-large.png" alt="Flattr this" title="Flattr this" border="0"></a>
 [![Build Status](https://travis-ci.org/Student007/koa-sub-domain.svg)](https://travis-ci.org/Student007/koa-sub-domain) ![Dependency](https://david-dm.org/student007/koa-sub-domain.svg) [![npm version](https://badge.fury.io/js/koa-sub-domain.svg)](http://badge.fury.io/js/koa-sub-domain)
 
-[![Stories in Ready](https://badge.waffle.io/Student007/koa-sub-domain.png?label=ready&title=Ready)](https://waffle.io/Student007/koa-sub-domain)[![Stories in Ready](https://badge.waffle.io/Student007/koa-sub-domain.png?label=In%20Progress&title=In%20Progress)](https://waffle.io/Student007/koa-sub-domain)[![Stories in Done](https://badge.waffle.io/Student007/koa-sub-domain.png?label=Done&title=Done last 7 days)](https://waffle.io/Student007/koa-sub-domain)
+[![Stories in Ready](https://badge.waffle.io/Student007/koa-sub-domain.png?label=ready&title=Ready)](https://waffle.io/Student007/koa-sub-domain) [![Stories in Ready](https://badge.waffle.io/Student007/koa-sub-domain.png?label=In%20Progress&title=In%20Progress)](https://waffle.io/Student007/koa-sub-domain) [![Stories in Done the last 7 days](https://badge.waffle.io/Student007/koa-sub-domain.png?label=Done&title=Done%20last%207%20days)](https://waffle.io/Student007/koa-sub-domain)
 # koa-sub-domain
 Simple and lightweight Koa middleware to handle multilevel and wildcard subdomains
 
